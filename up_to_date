@@ -1,0 +1,207 @@
+root@04d009e31980:/# ls
+alx-pre_course  bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@04d009e31980:/# cd alx-pre_course/0x01-git
+root@04d009e31980:/alx-pre_course/0x01-git# ls
+bash  c  js  README.md
+root@04d009e31980:/alx-pre_course/0x01-git# cat README.md
+0x01-git
+root@04d009e31980:/alx-pre_course/0x01-git# vim README.md
+root@04d009e31980:/alx-pre_course/0x01-git# cat README.md
+0x01-git Read Me
+root@04d009e31980:/alx-pre_course/0x01-git# cd ..
+root@04d009e31980:/alx-pre_course# ls
+0x01-git  README.md
+root@04d009e31980:/alx-pre_course# git add .
+root@04d009e31980:/alx-pre_course# git commit -m "Starting to code today, so cool"
+[main 3a6f556] Starting to code today, so cool
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 0x01-git/.README.md.swp
+root@04d009e31980:/alx-pre_course# git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 690 bytes | 690.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/M0663r/alx-pre_course.git
+   563bc0c..3a6f556  main -> main
+root@04d009e31980:/alx-pre_course# git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+root@04d009e31980:/alx-pre_course# git checkout -b update_script
+Switched to a new branch 'update_script'
+root@04d009e31980:/alx-pre_course# cd 0x01-git/bash
+root@04d009e31980:/alx-pre_course/0x01-git/bash# ls
+alx  school
+root@04d009e31980:/alx-pre_course/0x01-git/bash# toch 98
+bash: toch: command not found
+root@04d009e31980:/alx-pre_course/0x01-git/bash# touch 98
+root@04d009e31980:/alx-pre_course/0x01-git/bash# ls
+98  alx  school
+root@04d009e31980:/alx-pre_course/0x01-git/bash# vim alx
+root@04d009e31980:/alx-pre_course/0x01-git/bash# cat alx
+#!/bin/bash
+echo "ALX School"
+root@04d009e31980:/alx-pre_course/0x01-git/bash# vim school
+root@04d009e31980:/alx-pre_course/0x01-git/bash# cat school
+#!/bin/bash
+echo "The school is open!"
+root@04d009e31980:/alx-pre_course/0x01-git/bash# git cd ..
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+root@04d009e31980:/alx-pre_course/0x01-git/bash# cd ..
+root@04d009e31980:/alx-pre_course/0x01-git# cd ..
+root@04d009e31980:/alx-pre_course# git add .
+root@04d009e31980:/alx-pre_course# git commit -m "My personal work"
+[update_script 4909ab2] My personal work
+ 3 files changed, 2 insertions(+), 2 deletions(-)
+ create mode 100644 0x01-git/bash/98
+root@04d009e31980:/alx-pre_course# git push origin -u update_script
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 523 bytes | 523.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'update_script' on GitHub by visiting:
+remote:      https://github.com/M0663r/alx-pre_course/pull/new/update_script
+remote: 
+To https://github.com/M0663r/alx-pre_course.git
+ * [new branch]      update_script -> update_script
+Branch 'update_script' set up to track remote branch 'update_script' from 'origin'.
+root@04d009e31980:/alx-pre_course# git select
+git: 'select' is not a git command. See 'git --help'.
+root@04d009e31980:/alx-pre_course# git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+root@04d009e31980:/alx-pre_course# git switch
+fatal: missing branch or commit argument
+root@04d009e31980:/alx-pre_course# git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+root@04d009e31980:/alx-pre_course# ls
+0x01-git  README.md
+root@04d009e31980:/alx-pre_course# cd 0x01-git/bash
+root@04d009e31980:/alx-pre_course/0x01-git/bash# ls
+alx  school
+root@04d009e31980:/alx-pre_course/0x01-git/bash# vim alx
+root@04d009e31980:/alx-pre_course/0x01-git/bash# cat alx
+#!/bin/bash
+echo "ALX School is so cool!"
+root@04d009e31980:/alx-pre_course/0x01-git/bash# cd ..
+root@04d009e31980:/alx-pre_course/0x01-git# ls
+bash  c  js  README.md
+root@04d009e31980:/alx-pre_course/0x01-git# rm -r js
+root@04d009e31980:/alx-pre_course/0x01-git# ls
+bash  c  README.md
+root@04d009e31980:/alx-pre_course/0x01-git# git add .
+root@04d009e31980:/alx-pre_course/0x01-git# git commit -m "Hot fix"
+[main 729f261] Hot fix
+ 3 files changed, 1 insertion(+), 3 deletions(-)
+ delete mode 100644 0x01-git/js/index.js
+ delete mode 100644 0x01-git/js/main.js
+root@04d009e31980:/alx-pre_course/0x01-git# git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 444 bytes | 444.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/M0663r/alx-pre_course.git
+   3a6f556..729f261  main -> main
+root@04d009e31980:/alx-pre_course/0x01-git# cd ..
+root@04d009e31980:/alx-pre_course# ls
+0x01-git  README.md
+root@04d009e31980:/alx-pre_course# touch up_to_date
+root@04d009e31980:/alx-pre_course# vim up_to_date
